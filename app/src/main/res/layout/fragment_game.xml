@@ -55,7 +55,7 @@
         android:id="@+id/pbTimer"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:max="8"
+        android:max="10"
         android:progress="0"
         android:progressDrawable="@drawable/progress_loading"
         style="@style/Widget.AppCompat.ProgressBar.Horizontal"

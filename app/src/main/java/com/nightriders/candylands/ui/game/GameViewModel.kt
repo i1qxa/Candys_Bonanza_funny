@@ -10,6 +10,7 @@ import com.nightriders.candylands.domain.CANDYS_PREFS
 import com.nightriders.candylands.domain.GameCandy
 import com.nightriders.candylands.domain.LAST_COMPLETE_LEVEL_PREF
 import com.nightriders.candylands.domain.SelectedCandy
+import com.nightriders.candylands.domain.TIMER_MAIN_GAME
 import com.nightriders.candylands.domain.isGameOnPause
 import com.nightriders.candylands.domain.listOfGameCandys
 import kotlinx.coroutines.cancel
@@ -24,7 +25,7 @@ class GameViewModel(application: Application) : AndroidViewModel(application) {
     private val level = prefs.getInt(LAST_COMPLETE_LEVEL_PREF, 1)
     var endless = false
     var score = 0
-    var timer = 8
+    var timer = TIMER_MAIN_GAME
     var round = 1
     var roundMax = when (level) {
         in 0..15 -> 3
@@ -81,7 +82,7 @@ class GameViewModel(application: Application) : AndroidViewModel(application) {
         shouldUpdateVisibility.value = true
         fetchCandysList()
         shouldUpdateVisibility.value = false
-        timer = 8
+        timer = TIMER_MAIN_GAME
         timerLD.postValue(timer)
         startCountDawnTimer()
     }

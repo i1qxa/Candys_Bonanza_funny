@@ -14,6 +14,7 @@ import com.nightriders.candylands.domain.BALANS_PREFS
 import com.nightriders.candylands.domain.CANDYS_PREFS
 import com.nightriders.candylands.domain.launchFragment
 import com.nightriders.candylands.ui.base_help.BaseHelpFragment
+import com.nightriders.candylands.ui.bonus_game.BonusGameFragment
 import com.nightriders.candylands.ui.choose_level.ChooseLevelFragment
 import com.nightriders.candylands.ui.fortune_cookies.FortuneCookieFragment
 import com.nightriders.candylands.ui.game.GameFragment

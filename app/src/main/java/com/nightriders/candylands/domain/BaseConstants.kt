@@ -15,6 +15,27 @@ const val MUSIC_PREFS = "music_prefs"
 const val SOUND_PREFS = "sound_prefs"
 const val SHUFFLE_AMOUNT = "shuffle_amount"
 const val LAST_PREDICTION_DAY = "last_prediction_day"
+const val TIMER_MAIN_GAME = 10
+const val TIMER_BONUS_GAME = 30
+
+enum class MoveDirections(){
+    TOP,
+    DAWN,
+    RIGHT,
+    LEFT
+}
+
+data class Coordinate(
+    val x:Float,
+    val y:Float,
+)
+
+data class PositionInField(
+    val viewId:Int,
+    val column:Int,
+    val row:Int,
+    val coordinate:Coordinate
+)
 
 val listOfGameCandys = listOf(
     GameCandy(1,R.drawable.candy1),
