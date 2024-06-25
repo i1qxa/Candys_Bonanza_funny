@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.start.StartFragment">
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidHor25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidHor90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9"
+        />
+
+    <include
+        android:id="@+id/balance"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        layout="@layout/balance_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/btnHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/balance"
+        android:src="@drawable/help_empty"
+        android:background="@drawable/top_btns_bckgr"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        />
+
+    <TextView
+        android:id="@+id/btnPlay"
+        app:layout_constraintWidth_percent="0.75"
+        app:layout_constraintTop_toBottomOf="@id/guidHor25"
+        app:layout_constraintBottom_toTopOf="@id/btnEndless"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/btn_pink_bckgr"
+        android:text="@string/play"
+        style="@style/btn_text_style"
+        />
+
+    <TextView
+        android:id="@+id/btnEndless"
+        app:layout_constraintWidth_percent="0.75"
+        app:layout_constraintTop_toBottomOf="@id/btnPlay"
+        app:layout_constraintBottom_toBottomOf="@id/btnFortuneCookie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/btn_green_bckgr"
+        android:text="@string/endless_mode"
+        style="@style/btn_text_style"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/btnFortuneCookie"
+        app:layout_constraintWidth_percent="0.75"
+        app:layout_constraintTop_toBottomOf="@id/btnEndless"
+        app:layout_constraintBottom_toTopOf="@id/btnShop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/btn_green_bckgr"
+        android:text="@string/fortune_cookies"
+        style="@style/btn_text_style"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/btnShop"
+        app:layout_constraintWidth_percent="0.75"
+        app:layout_constraintTop_toBottomOf="@id/btnFortuneCookie"
+        app:layout_constraintBottom_toTopOf="@id/btnSettings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/btn_green_bckgr"
+        android:text="@string/shop"
+        style="@style/btn_text_style"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/btnSettings"
+        app:layout_constraintWidth_percent="0.75"
+        app:layout_constraintTop_toBottomOf="@id/btnShop"
+        app:layout_constraintBottom_toTopOf="@id/guidHor90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/btn_green_bckgr"
+        android:text="@string/setting"
+        style="@style/btn_text_style"
+        android:layout_marginTop="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

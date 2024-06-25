@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/round_bckgr">
+
+
+    <ImageView
+        android:id="@+id/candy22"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintWidth_percent="0.25"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:src="@drawable/candy1"
+        android:padding="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/candy21"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/candy22"
+        tools:src="@drawable/candy2"
+        android:padding="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/candy23"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/candy22"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:src="@drawable/candy3"
+        android:padding="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/candy11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/candy22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/candy22"
+        tools:src="@drawable/candy4"
+        android:padding="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/candy12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/candy22"
+        app:layout_constraintStart_toStartOf="@id/candy22"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:src="@drawable/candy5"
+        android:padding="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/candy31"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintTop_toBottomOf="@id/candy22"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/candy32"
+        tools:src="@drawable/candy6"
+        android:padding="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/candy32"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintTop_toBottomOf="@id/candy22"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/candy31"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:src="@drawable/candy7"
+        android:layout_marginEnd="10dp"
+        android:padding="10dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/balance_bckgr"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/ruby"
+        app:layout_constraintEnd_toEndOf="@id/tvBalanceValue"
+        app:layout_constraintTop_toTopOf="@id/tvBalanceValue"
+        app:layout_constraintBottom_toBottomOf="@id/tvBalanceValue"
+        android:src="@drawable/balance_bckgr"
+        />
+
+    <ImageView
+        android:id="@+id/ruby"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ruby"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tvBalanceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/ruby"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:fontFamily="@font/incised901bt_compact"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:paddingEnd="20dp"
+        android:paddingVertical="10dp"
+        android:text="85"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

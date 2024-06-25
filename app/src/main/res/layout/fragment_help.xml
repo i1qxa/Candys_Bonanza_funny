@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.help.HelpFragment"
+    >
+
+    <ImageView
+        android:id="@+id/pauseBckgr"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/pause_bckgr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hor80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8"
+        />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/lvl_green_bckgr"
+        app:layout_constraintStart_toStartOf="@id/btnOkay"
+        app:layout_constraintEnd_toEndOf="@id/btnOkay"
+        app:layout_constraintTop_toTopOf="@id/tvRulesHeader"
+        app:layout_constraintBottom_toBottomOf="@id/img"
+        />
+
+    <TextView
+        android:id="@+id/tvRulesHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/img"
+        app:layout_constraintEnd_toEndOf="@id/img"
+        app:layout_constraintBottom_toTopOf="@id/tvRulesText"
+        android:layout_marginBottom="10dp"
+        android:text="@string/rules"
+        android:fontFamily="@font/incised901bt_compact"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:lineSpacingExtra="10dp"
+        android:textSize="50dp"
+        android:paddingTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tvRulesText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/img"
+        app:layout_constraintEnd_toEndOf="@id/img"
+        app:layout_constraintBottom_toTopOf="@id/img"
+        android:layout_marginBottom="10dp"
+        tools:text="@string/game_rules"
+        android:fontFamily="@font/incised901bt_compact"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:lineSpacingExtra="10dp"
+        android:textSize="17dp"
+        />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="21:10"
+        app:layout_constraintStart_toStartOf="@id/btnOkay"
+        app:layout_constraintEnd_toEndOf="@id/btnOkay"
+        app:layout_constraintBottom_toTopOf="@id/btnOkay"
+        android:layout_marginBottom="50dp"
+        tools:src="@drawable/bonus_game_rules"
+        android:layout_marginHorizontal="15dp"
+        android:paddingBottom="20dp"
+        />
+
+    <TextView
+        android:id="@+id/btnOkay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.725"
+        app:layout_constraintHeight_percent="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hor80"
+        android:text="@string/okay"
+        android:fontFamily="@font/incised901bt_compact"
+        android:gravity="center"
+        android:background="@drawable/btn_pink_bckgr"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:paddingVertical="20dp"
+        android:paddingHorizontal="20dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

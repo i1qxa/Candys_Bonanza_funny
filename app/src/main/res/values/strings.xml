@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Candys Bonanza funny</string>
+    <string name="play">Play</string>
+    <string name="endless_mode">Endless Mode</string>
+    <string name="fortune_cookies">Fortune Cookies</string>
+    <string name="shop">Shop</string>
+    <string name="setting">Setting</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="round">ROUND %1$s</string>
+    <string name="bonus_game">BONUS GAME</string>
+    <string name="koeficient">x1.%1$s</string>
+    <string name="pause">Pause</string>
+    <string name="okay">Okay</string>
+    <string name="game_rules">In this game, you need to find the same items on both cards as quickly as possible. Select the desired object on the card and go through the steps. Remember that time is limited</string>
+    <string name="bonus_game_rules">This is a bonus game to increase your reward for the level. Select the same cells on the playing field as quickly as possible. Remember that time is limited. The more cells you destroy, the greater the reward</string>
+    <string name="rules">Rules</string>
+    <string name="level_complete">Level complete</string>
+    <string name="repeat">Repeat</string>
+    <string name="music">Music</string>
+    <string name="sound">Sound</string>
+    <string name="shop_description">If it seems to you that there are no identical elements on the cards, then shuffle them</string>
+    <string name="open">Open</string>
+    <string name="open_1_free">Open 1 free</string>
+    <string name="today_s_prediction">Today\'s prediction</string>
+    <string name="prediction_1">On this day, you will experience mental lightness and a surge of positive emotions.</string>
+    <string name="prediction_2">On this day, it would be nice to postpone all important things until tomorrow.</string>
+    <string name="prediction_3">It is unlikely that anyone will be able to surprise or confuse you today.</string>
+    <string name="prediction_4">Try to put aside anyone\'s claims or attempts to put pressure on you today.</string>
+    <string name="prediction_5">This day promises to be very emotionally intense. Moreover, the most pleasant thing is that the emotions will be entirely positive.</string>
+    <string name="tip_1">Test your attentiveness! Find the same icons on the cards</string>
+    <string name="tip_2">Multiply your points in the mini-game</string>
+    <string name="tip_3">Complete all the levels and beat the record!</string>
+    <string name="next">Next</string>
+    <string name="level_failed">Level failed</string>
+</resources>

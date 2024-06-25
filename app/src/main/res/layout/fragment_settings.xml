@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.settings.SettingsFragment">
+
+    <include
+        android:id="@+id/balance"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        layout="@layout/balance_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/btnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintDimensionRatio="1:1"
+        android:src="@drawable/home_without"
+        android:background="@drawable/top_btns_bckgr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:padding="8dp"
+        />
+
+    <ImageView
+        android:id="@+id/bckgr"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.72"
+        app:layout_constraintHeight_percent="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/lvl_green_bckgr"
+        />
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/bckgr"
+        app:layout_constraintEnd_toEndOf="@id/bckgr"
+        app:layout_constraintTop_toTopOf="@id/bckgr"
+        android:textColor="@color/white"
+        android:text="@string/setting"
+        android:fontFamily="@font/incised901bt_compact"
+        android:textSize="40dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/tvMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/bckgr"
+        app:layout_constraintTop_toBottomOf="@id/tvHeader"
+        app:layout_constraintBottom_toTopOf="@id/tvSound"
+        android:text="@string/music"
+        android:fontFamily="@font/incised901bt_compact"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tvSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/bckgr"
+        app:layout_constraintTop_toBottomOf="@id/tvMusic"
+        app:layout_constraintBottom_toBottomOf="@id/bckgr"
+        android:text="@string/sound"
+        android:fontFamily="@font/incised901bt_compact"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/musicjSwitcher"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.215"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintEnd_toEndOf="@id/bckgr"
+        app:layout_constraintTop_toTopOf="@id/tvMusic"
+        app:layout_constraintBottom_toBottomOf="@id/tvMusic"
+        android:layout_marginEnd="20dp"
+        tools:src="@drawable/off"
+        />
+
+    <ImageView
+        android:id="@+id/soundSwitcher"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.215"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintEnd_toEndOf="@id/bckgr"
+        app:layout_constraintTop_toTopOf="@id/tvSound"
+        app:layout_constraintBottom_toBottomOf="@id/tvSound"
+        android:layout_marginEnd="20dp"
+        tools:src="@drawable/on"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

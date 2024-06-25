@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/prediction_bckgr"
+    android:paddingHorizontal="10dp"
+    android:orientation="vertical"
+    android:paddingTop="25dp"
+    android:gravity="center_horizontal"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:fontFamily="@font/incised901bt_compact"
+        android:textSize="22dp"
+        android:text="@string/today_s_prediction"
+        android:gravity="center"
+        />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/predictionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/incised901bt_compact"
+            android:textSize="18dp"
+            android:gravity="center"
+            tools:text="@string/prediction_1"
+            />
+
+    </ScrollView>
+
+</LinearLayout>

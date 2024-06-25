@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.game.GameFragment">
+
+    <ImageView
+        android:id="@+id/btnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintDimensionRatio="1:1"
+        android:src="@drawable/home_without"
+        android:background="@drawable/top_btns_bckgr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:padding="8dp"
+        />
+
+    <ImageView
+        android:id="@+id/btnPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintHeight_percent="0.082"
+        app:layout_constraintDimensionRatio="1:1"
+        android:src="@drawable/pause_empty"
+        android:background="@drawable/top_btns_bckgr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        />
+
+    <ImageView
+        android:id="@+id/btnHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@id/btnPause"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/help_empty"
+        android:background="@drawable/top_btns_bckgr"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        />
+
+
+
+    <ProgressBar
+        android:id="@+id/pbTimer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:max="8"
+        android:progress="0"
+        android:progressDrawable="@drawable/progress_loading"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.85"
+        app:layout_constraintHeight_percent="0.06"
+        />
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/pbTimer"
+        app:layout_constraintBottom_toBottomOf="@id/pbTimer"
+        app:layout_constraintEnd_toEndOf="@id/pbTimer"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/incised901bt_compact"
+        android:textSize="100dp"
+        android:gravity="center"
+        tools:text="7"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/tvRound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/pbTimer"
+        app:layout_constraintBottom_toBottomOf="@id/pbTimer"
+        app:layout_constraintStart_toStartOf="@id/pbTimer"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/incised901bt_compact"
+        android:textSize="15dp"
+        android:gravity="center"
+        tools:text="ROUND 1"
+        android:textColor="@color/white"
+        />
+
+    <include
+        android:id="@+id/topRound"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        layout="@layout/round_for_game"
+        app:layout_constraintDimensionRatio="1:1"
+        android:src="@drawable/round_bckgr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnHome"
+        app:layout_constraintBottom_toTopOf="@id/pbTimer"
+        android:layout_marginVertical="10dp"
+        />
+
+    <include
+        android:id="@+id/bottomRound"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        layout="@layout/round_for_game"
+        app:layout_constraintDimensionRatio="1:1"
+        android:src="@drawable/round_bckgr"
+        app:layout_constraintStart_toStartOf="@id/topRound"
+        app:layout_constraintEnd_toEndOf="@id/topRound"
+        app:layout_constraintTop_toBottomOf="@id/pbTimer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginVertical="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/btnShuffle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/shuffle"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <TextView
+        android:id="@+id/shuffleAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/btnShuffle"
+        app:layout_constraintEnd_toEndOf="@id/btnShuffle"
+        android:text="9"
+        android:fontFamily="@font/incised901bt_compact"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
